@@ -3,6 +3,9 @@
 :root {
   line-height: 1.5;
   --bgcolor: #1d1c1c;
+  --heading-size:2rem;
+  --img-height:auto;
+  --img-width:50%;
 }
 
 h1, h2, h3, h4, h5, figure, p, ol, ul {
@@ -34,12 +37,36 @@ body {
 }
 
 h1{
-    font-size: 2rem;
+    font-size: var(--heading-size);
     text-align: center;
     text-decoration: underline;
     margin:30px;
 }
 
 .img{
-
+  margin-left: auto;
+  margin-right: auto;
+  height: var(--img-height);
+  width: var(--img-width);
+}
+.home-btn{
+  display: inline-block;
+  margin: 20px;
+  height: 30px;
+  width: 60px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50px;
+  
+}
+.home-btn:link{
+  text-decoration: none;
+  color:blue;
+  background-color: #eee9e9;
+}
+.home-btn:hover{
+  text-decoration: underline;
+}
+.home-btn:visited {
+  color: red; 
 }
